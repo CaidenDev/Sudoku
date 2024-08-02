@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    font-family: "Barlow", Arial;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    text-align: center;
+    /* background-image: url("./stacked-waves-haikei.png");
+    background-size: cover;
+    background-position: center; */
+
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #eee1fe;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background span {
+    width: 26vmin;
+    height: 26vmin;
+    border-radius: 26vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #ffc2d4;
+    top: 30%;
+    left: 54%;
+    animation-duration: 24s;
+    animation-delay: -34s;
+    transform-origin: 18vw 1vh;
+    box-shadow: -52vmin 0 6.633556115308311vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #f4f7c5;
+    top: 80%;
+    left: 51%;
+    animation-duration: 51s;
+    animation-delay: -11s;
+    transform-origin: 20vw -14vh;
+    box-shadow: -52vmin 0 7.243163515946828vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #dbc7ff;
+    top: 78%;
+    left: 74%;
+    animation-duration: 38s;
+    animation-delay: -50s;
+    transform-origin: -17vw 3vh;
+    box-shadow: 52vmin 0 7.0287922792043105vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #ffc2d4;
+    top: 26%;
+    left: 22%;
+    animation-duration: 42s;
+    animation-delay: -9s;
+    transform-origin: -17vw -7vh;
+    box-shadow: -52vmin 0 6.578611541919268vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #dbc7ff;
+    top: 2%;
+    left: 4%;
+    animation-duration: 26s;
+    animation-delay: -46s;
+    transform-origin: 20vw -8vh;
+    box-shadow: 52vmin 0 7.229396108797768vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #f4f7c5;
+    top: 33%;
+    left: 12%;
+    animation-duration: 33s;
+    animation-delay: -31s;
+    transform-origin: 6vw 3vh;
+    box-shadow: 52vmin 0 7.427752253870198vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #ffc2d4;
+    top: 73%;
+    left: 85%;
+    animation-duration: 25s;
+    animation-delay: -1s;
+    transform-origin: -17vw 4vh;
+    box-shadow: 52vmin 0 6.99779079481499vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #dbc7ff;
+    top: 25%;
+    left: 26%;
+    animation-duration: 53s;
+    animation-delay: -30s;
+    transform-origin: -23vw -2vh;
+    box-shadow: 52vmin 0 7.053593276104179vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #f4f7c5;
+    top: 27%;
+    left: 27%;
+    animation-duration: 7s;
+    animation-delay: -24s;
+    transform-origin: 17vw 7vh;
+    box-shadow: 52vmin 0 6.848348280830293vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #f4f7c5;
+    top: 61%;
+    left: 83%;
+    animation-duration: 19s;
+    animation-delay: -38s;
+    transform-origin: 14vw 25vh;
+    box-shadow: 52vmin 0 6.580539247451491vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #dbc7ff;
+    top: 53%;
+    left: 98%;
+    animation-duration: 32s;
+    animation-delay: -14s;
+    transform-origin: 15vw -23vh;
+    box-shadow: -52vmin 0 6.820933886128653vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #dbc7ff;
+    top: 81%;
+    left: 78%;
+    animation-duration: 19s;
+    animation-delay: -6s;
+    transform-origin: -16vw -21vh;
+    box-shadow: 52vmin 0 6.679975878432618vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: #f4f7c5;
+    top: 82%;
+    left: 30%;
+    animation-duration: 36s;
+    animation-delay: -39s;
+    transform-origin: 19vw 18vh;
+    box-shadow: 52vmin 0 6.789998109950224vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: #f4f7c5;
+    top: 32%;
+    left: 48%;
+    animation-duration: 32s;
+    animation-delay: -16s;
+    transform-origin: 20vw 0vh;
+    box-shadow: 52vmin 0 6.974783049872336vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: #f4f7c5;
+    top: 32%;
+    left: 5%;
+    animation-duration: 49s;
+    animation-delay: -11s;
+    transform-origin: 11vw 10vh;
+    box-shadow: 52vmin 0 6.780774743185044vmin currentColor;
+}
+.background span:nth-child(15) {
+    color: #ffc2d4;
+    top: 11%;
+    left: 41%;
+    animation-duration: 48s;
+    animation-delay: -22s;
+    transform-origin: -24vw -19vh;
+    box-shadow: 52vmin 0 7.370089382998347vmin currentColor;
+}
+.background span:nth-child(16) {
+    color: #dbc7ff;
+    top: 33%;
+    left: 76%;
+    animation-duration: 43s;
+    animation-delay: -34s;
+    transform-origin: 9vw 5vh;
+    box-shadow: 52vmin 0 6.52961090110899vmin currentColor;
+}
+.background span:nth-child(17) {
+    color: #ffc2d4;
+    top: 47%;
+    left: 55%;
+    animation-duration: 33s;
+    animation-delay: -37s;
+    transform-origin: 22vw 13vh;
+    box-shadow: -52vmin 0 6.958520572727272vmin currentColor;
+}
+.background span:nth-child(18) {
+    color: #f4f7c5;
+    top: 31%;
+    left: 8%;
+    animation-duration: 24s;
+    animation-delay: -26s;
+    transform-origin: 14vw 10vh;
+    box-shadow: 52vmin 0 7.138951877261048vmin currentColor;
+}
+.background span:nth-child(19) {
+    color: #ffc2d4;
+    top: 94%;
+    left: 65%;
+    animation-duration: 21s;
+    animation-delay: -28s;
+    transform-origin: 18vw 22vh;
+    box-shadow: 52vmin 0 7.34797381562249vmin currentColor;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+hr{
+    width: 500px;
+    margin: 10px auto;
+    
+    border: 1px solid black;
+}
+
+#errors{
+    color: rgb(255, 115, 80);
+    font-weight: 350;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 0; /* Remove any gaps between the grid items */
+    border: 1px solid black;
+}   
+
+.tile {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+
+    /* TEXT */
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: 1.5px solid white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 6px;
+
+    /* TEXT */
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected{
+    background-color: rgba(240, 157, 240, 0.6);
+}
+
+.tile-start{
+    background-color: rgba(240, 157, 240, 0.3);
+}
+
+.horizontal-line{
+    border-bottom: 1px solid black;
+}
+
+.vertical-line{
+    border-right: 1px solid black;
+}
+
+.number-complete{
+    background-color: rgb(160, 250, 160);
+    color: white;
+}
+
+#win-popup{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    flex-direction: column;
+    
+    display: none;
+}
+
+#win-popup h4{
+    font-size: 1.8rem;
+    margin: 10px;
+
+}
+
+#win-popup p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+#close-button{
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 0px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    
+}
+
+#close-button:hover{
+    background-color: rgba(240, 157, 240, 0.3);
+}
+
+.emoji{
+    font-size: 100px;
+}
+
+
+#timer{
+    margin-bottom: 5px;
+}
